@@ -1,3 +1,3 @@
 
-# HTML/index.html
+# index.html
 
