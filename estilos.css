@@ -1,10 +1,46 @@
 *{
     margin: 0px;    
     padding: 0px;
+    box-sizing: border-box;
 }
 p{
     font-size: 20px;
 }
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+.navbar{
+    background-color: #c5e2fc65; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.navbar:hover{
+    background-color: #c5e2fc; 
+}
+
+.mi-nombre{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.mi-info{
+    text-align: justify;
+    font-size: 20px;
+}
+
+@include media-breakpoint-up(sm) {
+    .mi-info p{
+        font-size: 400px;
+    }
+}
+
 .contenedorImg{
 align-items: center; 
 text-align: center;
