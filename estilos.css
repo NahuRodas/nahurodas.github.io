@@ -49,12 +49,6 @@ body{
     font-size: 20px;
 }
 
-@include media-breakpoint-up(sm) {
-    .mi-info p{
-        font-size: 400px;
-    }
-}
-
 .contenedorImg{
 align-items: center; 
 text-align: center;
