@@ -10,27 +10,25 @@
     <title>Cesar Nahuel Rodas</title>
 </head>
 
-    <nav class="navbar mb-4">
-
-            <div class="row container text-center">
-                <div class="link container col-sm-12 col-md-4 col-xl-4">
-                    <a class="navbar-brand " href="#"><strong>Sobre mi</strong></a>
-                </div>
-                <div class="link container col-sm-12 col-md-4 col-xl-4">
-                    <a class="navbar-brand text-center" href="#"><strong>Proyectos</strong></a>
-                </div>
-                <div class="link container col-sm-12 col-md-4 col-xl-4">
-                    <a class="navbar-brand text-center" href="#"><strong>Contáctame</strong></a>
-                </div>
+<nav class="navbar mb-4">
+        <div class="row container text-center">
+            <div class="link container col-sm-12 col-md-4 col-xl-4">
+                <button class="nav-btn navbar-brand text-center" id="btn-sobre-mi"><strong>Sobre mi</strong></button>
             </div>
+            <div class="link container col-sm-12 col-md-4 col-xl-4">
+                <button class="nav-btn navbar-brand text-center" id="btn-proyectos"><strong>Proyectos</strong></button>
+            </div>
+            <div class="link container col-sm-12 col-md-4 col-xl-4">
+                <button class="nav-btn navbar-brand text-center" id="btn-contactame"><strong>Contáctame</strong></button>
+            </div>
+        </div>
+</nav>
 
-    </nav>
 
-<div class="container-fluid">
     <header class="container-fluid p-0 mb-4">
 
             <div class="mi-nombre container-fluid p-4 bg-transparent">
-                <h1 class="text-black">Hola, soy</h1><br><h1 class="text-black"><strong>Cesar Nahuel Rodas </strong></h1>
+                <h1 class="text-black" id="mi">Hola, soy</h1><br><h1 class="text-black"><strong>Cesar Nahuel Rodas </strong></h1>
             </div>
             <div class="mi-info container-fluid bg-transparent text-black">
                 <p>Soy desarrollador web! Y aunque no cuento con mucha experiencia
@@ -99,14 +97,14 @@
                     <img src="/recursos/wpG.png" alt="wordPress" id="WordPress" class="img-thumbnail bg-transparent border-0">
                 </div>
                 <div class="contenedorImg">
-                    <img src="/recursos/afG.png" alt="afterEffects" id="After Effects" class="img-thumbnail bg-transparent border-0">
+                    <img src="/recursos/afG.png" alt="afterEffects" id="AfterEffects" class="img-thumbnail bg-transparent border-0">
                 </div>
                 <div class="contenedorImg">
                     <img src="/recursos/psG.png" alt="photoshop" id="Photoshop" class="img-thumbnail bg-transparent border-0">
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="proyectos">
             <h1>Proyectos</h1>
             <hr class="border border-3 border-dark">
         </div>
@@ -186,11 +184,7 @@
             </div>
         </div>
             
-        
-    <script src="codigo.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
-<footer>
+<footer id="contacto">
     <div class="container">
         <h1>Contactame</h1>
         <hr class="border border-3 border-dark">
@@ -223,6 +217,7 @@
     </div>
 </div>
 </footer>
-</div>
-
+    <script src="codigo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
 </html>
