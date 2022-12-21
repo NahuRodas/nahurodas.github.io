@@ -12,17 +12,31 @@ header{
     height: auto;
 }
 
+body{
+    background-image: url(/recursos/gb2.png); 
+    background-position-x: center;
+    background-size:contain; 
+    background-repeat: repeat-y;
+}
+
 .navbar{
     background-color: #c5e2fc65; 
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 3;
 }
 
 .navbar:hover{
-    background-color: #c5e2fc; 
+    background-color: #365f83dc; 
+}
+
+.link a:hover{
+    color: white;
 }
 
 .mi-nombre{
@@ -46,9 +60,31 @@ align-items: center;
 text-align: center;
 padding: 5px;
 }
+
 .logo{
     text-align: center;
     margin: 0 auto;
     width:100%;
-    font-size:2vw;
+    font-size:20px;
  }
+
+.proyectos{
+    padding: 0px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin-bottom: 10px;
+}
+
+.contenedorBot{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.btn{
+    margin: 20px;
+}
