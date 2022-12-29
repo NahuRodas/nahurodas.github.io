@@ -10,6 +10,7 @@ p{
 header{
     width: 100%;
     height: auto;
+    margin-top: 2%;
 }
 
 body{
@@ -38,10 +39,13 @@ body{
 .nav-btn{
     background-color: rgba(240, 248, 255, 0);
     border: none;
+    width: 50%;
 }
 
 .nav-btn:hover{
     color: white;
+    background-color: #365f83dc;
+    border-radius: 10px;
 }
 
 .mi-nombre{
@@ -75,8 +79,9 @@ padding: 5px;
 }
 
 .card{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
+
 
 .contenedorBot{
     display: flex;
@@ -87,3 +92,59 @@ padding: 5px;
 .btn{
     margin: 20px;
 }
+
+.contacto-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bloque-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail{
+    border-right: 1px solid black;
+}
+
+.whatsapp{
+    border-right: 1px solid black;
+}
+
+.contacto-logo{
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+.contact{
+    overflow: auto;
+    overflow-wrap: break-word;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media screen  and (max-width: 767px ) {
+    .mi-nombre{
+        margin-top: 100px;
+    }
+}
+
+@media screen  and (max-width: 1200px ) {
+    .bloque-contacto{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .mail{
+        border: none;
+    }
+    .whatsapp{
+        border: none;
+    }
+}
+
+

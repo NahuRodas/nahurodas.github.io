@@ -1,5 +1,5 @@
  
- // Cambio de logos de gris a color
+ // Cambio del estilo de los logos de gris a color
 
  var imagenes = [ html = document.getElementById('HTML'),  
  csss = document.getElementById('CSS'),
@@ -39,6 +39,7 @@ imagenes.forEach(e => {
 });
 
 // ----------------------------------------------------------------------
+
 // Botones de la barra de navegacion
 
 var sobreMi = document.getElementById('btn-sobre-mi'),
