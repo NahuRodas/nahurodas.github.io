@@ -23,19 +23,20 @@
  var padre;
 
 imagenes.forEach(e => {
+    
  e.addEventListener('mouseover',function(){
-     e.src = e.src.replace("G","");
-     padre = e.parentNode;
-     elemento = document.createElement('h1');
-     elemento.className = "logo";
-     elemento.innerHTML = e.id;
-     padre.append(elemento);
+    e.style.filter = "grayscale(0%)";
+    elemento = document.createElement('h1');
+    elemento.className = "logo";
+    elemento.innerHTML = e.id;
+    padre.append(elemento);
 
      
  })
+
  e.addEventListener('mouseout',function(){
-     e.src = e.src.slice(0,-4)+"G.png";
-     padre.removeChild(padre.lastChild);    })
+    e.style.filter = "grayscale(100%)";
+    padre.removeChild(padre.lastChild);    })
 });
 
 // ----------------------------------------------------------------------
