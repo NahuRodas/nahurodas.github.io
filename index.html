@@ -3,256 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="estilos_responsive.css">
     <title>Cesar Nahuel Rodas</title>
 </head>
 
-<nav class="navbar mb-4">
-        <div class="row row-cols-md-3 container text-center">
-            <div class="link container">
-                <button class="nav-btn navbar-brand text-center" id="btn-sobre-mi"><strong>Sobre mi</strong></button>
-            </div>
-            <div class="link container">
-                <button class="nav-btn navbar-brand text-center" id="btn-proyectos"><strong>Proyectos</strong></button>
-            </div>
-            <div class="link container">
-                <button class="nav-btn navbar-brand text-center" id="btn-contactame"><strong>Contáctame</strong></button>
-            </div>
-        </div>
+<nav class="barra-navegacion" id="barra-navegacion">
+    <div class="btn-nav-contenedor">
+        <button class="btn-nav" id="btn-sobre-mi"> Sobre mi </button>
+    </div>
+    <div class="btn-nav-contenedor">
+        <button class="btn-nav" id="btn-cv"> Curriculum Vitae </button>
+    </div>
+    <div class="btn-nav-contenedor">
+        <button class="btn-nav" id="btn-proyectos"> Proyectos </button>
+    </div>
+    <div class="btn-nav-contenedor">
+        <button class="btn-nav" id="btn-contacto"> Contactame </button>
+    </div>
 </nav>
 
-
-    <header class="container p-0 mb-4">
-
-            <div class="mi-nombre p-4 bg-transparent">
-                <h1 class="text-black" id="mi">Hola, soy</h1><br><h1 class="text-black"><strong>Cesar Nahuel Rodas </strong></h1>
+<header class="sobre-mi" id="sobre-mi">
+    <div class="contenedor">
+        <div class="sobre-mi-texto">
+            <h2>Hola! Mi nombre es </h2>
+            <h1>Cesar Rodas</h1>
+            <p>Soy <strong>desarrollador web</strong>! Poseo conocimientos en <strong>front-end</strong>
+                y <strong>back-end</strong>, como así tambien en <strong>diseño web</strong> y diseño gráfico.
+            </p>
+            <div class="sobre-mi-imagen">
+                <img src="http://placekitten.com/g/200/200" alt="Imagen de perfil">
             </div>
-            <div class="mi-info container-fluid bg-transparent text-black">
-                <p>Soy <strong>desarrollador web</strong>! Poseo conocimientos en <strong>front-end</strong>
-                    y <strong>back-end</strong>, como tambien en <strong>diseño web</strong> o diseño en general.
-                    Cuento con varias cualidades personales: soy trabajador, profesional, 
-                    autodidacta, aprendo rápido, soy amigable, me desarrollo bien con mis compañeros y soy puntual.
-                </p>
-                <p>
-                    Graduado de <strong>Técnico en informática</strong>  en la escuela secundaria Sagrado corazon de Jesús, Hurlingham, Buenos Aires, Argentina.
-                    Y actualmente cursando tercer año de <strong>Ingenieria en Sistemas</strong>  en la UTN, Argentina.
-                </p>
-            </div>
+            <p>
+                Graduado de <strong>Técnico en informática</strong>  en la escuela secundaria Sagrado corazon de Jesús, Hurlingham, Buenos Aires, Argentina.
+                Y actualmente cursando tercer año de <strong>Ingenieria en Sistemas</strong>  en la UTN, Argentina.
+            </p>
         </div>
-    </header>
+    </div>
+</header>
+
+<hr class="separador">
+
+<body>
     
-    <body class="container p-3 mb-2 bg-white text-black"> 
-        <div class="container mb-5" id="conocimientos">
-            <h1>Conocimientos</h1>
-            <hr class="border border-3 border-dark">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-xl-6  mb-1" id="r1">
-                <div class="contenedor-img">
-                    <img src="/recursos/html.png" alt="html" id="HTML" class="img-thumbnail bg-transparent border-0 ">
+    <div class="curriculum" id="curriculum">
+        <div class="contenedor">
+            <h2 class="subtitulo">Curriculum Vitae</h2>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item bg-transparent">
+                  <h3 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button bg-transparent collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h3>Estudios</h3>
+                    </button>
+                  </h3>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                <strong>Técnico en informática</strong>, Instituto Sagrado Corazón de Jesus, Buenos Aires, Argentina
+                            </li>
+                            <li>
+                                <strong>Ingeniería en Sistemas</strong>, UTN, Argentina
+                            </li>
+                            <li>
+                                <strong>Desarrollador Web</strong>, Udemy Academy
+                            </li>
+                            <li>
+                                <strong>Desarrollador Web</strong>, Argentina Programa
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
                 </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/css.png" alt="css" id="CSS" class="img-thumbnail bg-transparent border-0">
+                <div class="accordion-item bg-transparent">
+                  <h3 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h3>Lenguajes y Frameworks</h3>
+                    </button>
+                  </h3>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>Json</li>
+                            <li>Ajax</li>
+                            <li>NodeJS</li>
+                            <li>React</li>
+                            <li>Next</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>C#</li>
+                        </ul>
+                    </div>
+                  </div>
                 </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/js.png" alt="javaScript" id="javaScript" class="img-thumbnail bg-transparent border-0">
+                <div class="accordion-item bg-transparent">
+                  <h3 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <h3>Habilidades</h3>
+                    </button>
+                  </h3>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Resolución de problemas</li>
+                            <li>Liderazgo</li>
+                            <li>Trabajo en grupo</li>
+                            <li>Facilidad de aprendizaje de nuevas tecnologias</li>
+                            <li>Autodidacta</li>
+                            <li>Aprendizaje rápido</li>
+                            <li>Profesionalidad y puntualidad</li>
+                        </ul>
+                    </div>
+                  </div>
                 </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/jquery.png" alt="jQuery" id="jQuery" class="img-thumbnail bg-transparent border-0">
+                <div class="accordion-item bg-transparent">
+                  <h3 class="accordion-header " id="flush-headingFive">
+                    <button class="accordion-button bg-transparent collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        <h3>Extras</h3>
+                    </button>
+                  </h3>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse " aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body ">
+                        <ul>
+                            <li>Nivel de ingles intermedio</li>
+                            <li>Microssoft Office</li>
+                            <li>Photoshop</li>
+                            <li>CorelDraw</li>
+                            <li>After Effects</li>
+                            <li>Git/GitHub</li>
+                        </ul>
+                    </div>
+                  </div>
                 </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/json.png" alt="json" id="json" class="img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/ajax.png" alt="ajax" id="ajax" class="img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/bs.png" alt="bootstrap" id="Bootstrap" class="img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/java.png" alt="java" id="Java" class="img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/cs.png" alt="c#" id="C#" class="img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/c++.png" alt="c++" id="C++" class="img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/php.png" alt="php" id="php" class="img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/python.png" alt="Python" id="Python" class="img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/mysql.png" alt="mysql" id="MySQL" class="container img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/vsc.png" alt="vsCode" id="VSCode" class="img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/eclipse.png" alt="eclipse" id="Eclipse" class="img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/wp.png" alt="wordPress" id="WordPress" class="img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/af.png" alt="afterEffects" id="AfterEffects" class="img-thumbnail bg-transparent border-0">
-                </div>
-                <div class="contenedor-img">
-                    <img src="/recursos/ps.png" alt="photoshop" id="Photoshop" class="img-thumbnail bg-transparent border-0">
-                </div>
-            </div>
+              </div>
         </div>
-        <div class="container" id="proyectos">
-            <h1>Proyectos</h1>
-            <hr class="border border-3 border-dark">
-        </div>
+    </div>
 
-        <div class="proyectos container-fluid contenedorPro row row-cols-sm-1 row-cols-md-2 row-cols-xl-2">
-            <div class="container-fluid card">
-                <div class="card-body">
-                    <h4 class="card-title">Página personal</h4>
-                    <hr>
-                    <p class="card-text">
-                        Para la construcción de mi pagina personal tuve que utilizar mis conocimientos en <strong>HTML</strong>, <strong>CSS</strong>
-                        y <strong>JavaScript</strong>. <br>Ademas de la implementación de <strong>Bootstrap</strong> para una mayor rapidez
-                        a la hora de aplicar estilos. 
-                    </p>
-                    <div class="container-fluid">
-                        <img class="img-fluid img-thumbnail" src="/recursos/proyecto1.PNG" alt="Imagen de Página personal">
+    <hr class="separador">
+
+    <div class="proyectos-sm" id="proyectos-sm">
+        <div class="contenedor">
+            <h2 class="subtitulo">Proyectos</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card">
+                        <img src="http://placekitten.com/g/200/200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Curriculum Vitae online</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
                     </div>
-                    <div class="contenedorBot">
-                        <a href="https://github.com/NahuRodas/nahurodas.github.io" class="btn btn-primary">GitHub</a>
-                        <a href="https://nahurodas.github.io/" class="btn btn-primary">Visitar</a>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card">
+                        <img src="http://placekitten.com/g/200/200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lista de tareas</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card">
+                        <img src="http://placekitten.com/g/200/200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Animación CSS</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+
+    <div class="proyectos-md" id="proyectos-md">
+        <div class="contenedor">
+            <h2 class="subtitulo">Proyectos</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="grilla-proyectos">
+                        <div class="card">
+                            <img src="http://placekitten.com/g/200/200" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Curriculum Vitae online</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Visitar</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="http://placekitten.com/g/200/200" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Curriculum Vitae online</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="grilla-proyectos">
+                        <div class="card">
+                            <img src="http://placekitten.com/g/200/200" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Curriculum Vitae online</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Visitar</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="http://placekitten.com/g/200/200" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lista de tareas</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+
+    <div class="proyectos-xl" id="proyectos-xl">
+        <div class="contenedor">
+            <h2 class="subtitulo">Proyectos</h2>
+            <div class="grilla-proyectos">
+                <div class="card">
+                    <img src="http://placekitten.com/g/200/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Curriculum Vitae online</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="http://placekitten.com/g/200/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Curriculum Vitae online</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="http://placekitten.com/g/200/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Curriculum Vitae online</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="http://placekitten.com/g/200/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Curriculum Vitae online</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid card">
-                <div class="card-body">
-                    <h4 class="card-title">Lista de taréas</h4>
-                    <hr>
-                    <p class="card-text">
-                        Para la construcción de mi pagina personal tuve que utilizar mis conocimientos en <strong>HTML</strong>, <strong>CSS</strong>
-                        y <strong>JavaScript</strong>. <br>Ademas de la implementación de <strong>Bootstrap</strong> para una mayor rapidez
-                        a la hora de aplicar estilos.
-                    </p>
-                    <div class="container-fluid">
-                        <img class="img-fluid img-thumbnail" src="/recursos/proyecto2.PNG" alt="Imagen de Lista de tareas">
+        </div>
+    </div>
+
+    <hr class="separador">
+
+    <div class="contactos" id="contactos">
+        <div class="contenedor">
+            <h2 class="subtitulo">Contáctame</h2>
+        </div>
+        <div class="contenedor">
+            <form action="#" method="post" class="formulario-contacto">
+                <div class="mb-3">                    
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre. . .">
+                </div>
+                <div class="mb-3">                    
+                    <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="ejemplo@example.com">
+                </div>
+                <div class="mb-3">                    
+                    <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Mensaje. . . "></textarea>
+                </div>
+                <button class="btn-enviar" type="submit">Enviar</button>
+            </form>
+            <div class="otro-contacto">
+                <h4>Otras formas de contácto</h4>
+                <div class="grilla">
+                    <div>
+                        <i class='bx bxl-whatsapp' style='color:#ffffff'  ></i>
+                        <span class="contacto">+54 11 39282419</span>
                     </div>
-                    <div class="contenedorBot">
-                        <a href="https://github.com/NahuRodas/ToDoList" class="btn btn-primary">GitHub</a>
-                        <a href="https://nahurodas.github.io/ToDoList/" class="btn btn-primary">Visitar</a>
+                    <div>
+                        <i class='bx bx-envelope' style='color:#ffffff' ></i>
+                        <a href="mailto:cesarnrodas@gmail.com"><span class="contacto">cesarnrodas@gmail.com</span></a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-discord-alt' style='color:#ffffff' ></i>
+                        <span class="contacto">Call me Nahu#6969</span>
+                    </div>
+                    <div>
+                        <i class='bx bxl-linkedin-square' style='color:#ffffff' ></i>
+                        <a href="https://www.linkedin.com/in/cesar-rodas-071489253/"><span class="contacto">Cesar Rodas</span></a>
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid card">
-                <div class="card-body">
-                    <h4 class="card-title">YouTube Clon</h4>
-                    <hr>
-                    <p class="card-text">
-                        Para la construcción de mi pagina personal tuve que utilizar mis conocimientos en <strong>HTML</strong>, <strong>CSS</strong>
-                        y <strong>JavaScript</strong>. <br>Ademas de la implementación de <strong>Bootstrap</strong> para una mayor rapidez
-                        a la hora de aplicar estilos.
-                    </p>
-                    <div class="container">
-                        <img class="img-fluid img-thumbnail" src="https://placekitten.com/640/360" alt="Imagen de Youtube Clon">
-                    </div>
-                    <div class="contenedorBot">
-                        <a href="https://github.com/NahuRodas/YoutubeClon" class="btn btn-primary">GitHub</a>
-                        <a href="https://nahurodas.github.io/YoutubeClon/" class="btn btn-primary">Visitar</a>
-                    </div>
-                </div>
-            </div>     
-            <div class="container-fluid card">
-                <div class="card-body">
-                    <h4 class="card-title">Proyecto 4</h4>
-                    <hr>
-                    <p class="card-text">
-                        Para la construcción de mi pagina personal tuve que utilizar mis conocimientos en <strong>HTML</strong>, <strong>CSS</strong>
-                        y <strong>JavaScript</strong>. <br>Ademas de la implementación de <strong>Bootstrap</strong> para una mayor rapidez
-                        a la hora de aplicar estilos.
-                    </p>
-                    <div class="container">
-                        <img class="img-fluid img-thumbnail" src="https://placekitten.com/640/361" alt="Proyecto 1">
-                    </div>
-                    <div class="contenedorBot">
-                        <a href="https://github.com/NahuRodas/nahurodas.github.io" class="btn btn-primary">GitHub</a>
-                        <a href="https://nahurodas.github.io/" class="btn btn-primary">Visitar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid card">
-                <div class="card-body">
-                    <h4 class="card-title">Proyecto 5</h4>
-                    <hr>
-                    <p class="card-text">
-                        Para la construcción de mi pagina personal tuve que utilizar mis conocimientos en <strong>HTML</strong>, <strong>CSS</strong>
-                        y <strong>JavaScript</strong>. <br>Ademas de la implementación de <strong>Bootstrap</strong> para una mayor rapidez
-                        a la hora de aplicar estilos.
-                    </p>
-                    <div class="container">
-                        <img class="img-fluid img-thumbnail" src="https://placekitten.com/640/361" alt="Proyecto 1">
-                    </div>
-                    <div class="contenedorBot">
-                        <a href="https://github.com/NahuRodas/nahurodas.github.io" class="btn btn-primary">GitHub</a>
-                        <a href="https://nahurodas.github.io/" class="btn btn-primary">Visitar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid card">
-                <div class="card-body">
-                    <h4 class="card-title">Proyecto 6</h4>
-                    <hr>
-                    <p class="card-text">
-                        Para la construcción de mi pagina personal tuve que utilizar mis conocimientos en <strong>HTML</strong>, <strong>CSS</strong>
-                        y <strong>JavaScript</strong>. <br>Ademas de la implementación de <strong>Bootstrap</strong> para una mayor rapidez
-                        a la hora de aplicar estilos.
-                    </p>
-                    <div class="container">
-                        <img class="img-fluid img-thumbnail" src="https://placekitten.com/640/361" alt="Proyecto 1">
-                    </div>
-                    <div class="contenedorBot">
-                        <a href="https://github.com/NahuRodas/nahurodas.github.io" class="btn btn-primary">GitHub</a>
-                        <a href="https://nahurodas.github.io/" class="btn btn-primary">Visitar</a>
-                    </div>
-                </div>
-            </div>
-        </div> 
+            </div>  
+        </div>
+    </div>
+
 </body>
 
-<footer id="contacto">
-    <div class="container">
-        <h1>Contactame</h1>
-        <hr class="border border-3 border-dark">
-    </div>
-    <div class="contacto-info container-fluid row row-cols-xl-3 row-cols-1">
-        <div class="bloque-contacto mail container">
-            <div>
-                <img class="contacto-logo" src="/recursos/gmail.png" alt="">
-            </div>
-            <div >
-                <a href="mailto:cesarnrodas@gmail.com"><span class="contact">cesarnrodas@gmail.com</span></a>
-            </div>
-        </div>
-        <div class="bloque-contacto whatsapp container">
-            <div>
-                <img class="contacto-logo" src="/recursos/whatsapp.png" alt="">
-            </div>
-            <div >
-                <span class="contact">+54 15 3928-2419</span>
-            </div>
-        </div>
-        <div class="bloque-contacto git container">
-            <div>
-                <img class="contacto-logo" src="/recursos/git.png" alt="">
-            </div>
-            <div>
-                <span class="contact">@NahuRodas</span>
-            </div>
-        </div>
-    </div>
+<footer>
+
 </footer>
 <script src="codigo.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

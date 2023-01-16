@@ -17,7 +17,7 @@
 .separador{
     padding: 0;
     margin: 0;
-    color: aqua;
+    color: white;
 }
 
 .contenedor{
@@ -80,7 +80,7 @@
 }
 
 .sobre-mi-imagen img{
-    width: 80%;
+    width: 200px;
     border-radius: 50%;
     border: 4px solid aqua;
 }
@@ -111,32 +111,54 @@
 
         /* Slider de proyectos */
         
-.proyectos{
+.proyectos-sm{
     padding: 10% 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+}
+
+.proyectos-md{
+    display: none;
+
+}
+
+.proyectos-xl{
+    display: none;
 }
 
 .carousel{
     margin-top: 10%;
 }
 
+.carousel-control-prev-icon{
+    border-radius: 50%;
+}
+.carousel-control-next-icon{
+    border-radius: 50%;
+}
+
 .card{
     margin: 0 auto;
+    width: 18rem;
 }
 
         /* Formulario de contacto y otros contactos */
 
 .contactos{
     padding: 10% 0;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 }
 
 .formulario-contacto{
     margin-top: 10%;
+}
+
+.form-control{
+    resize: none;
 }
 
 .btn-enviar{
@@ -178,9 +200,73 @@
         /*--------------------------------------------------------*/
 
 @media screen and (min-width:768px) {
-    
+
+        /* Encabezado de la página con información breve sobre mí */
+    .sobre-mi{
+        padding: 50px 0;
+    }
+
+    .sobre-mi-texto p{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .sobre-mi-imagen img{
+        width: 300px;
+    }
+
+    .proyectos-sm{
+        display: none;
+    }
+
+    .proyectos-md{
+        visibility: visible;
+        padding: 10% 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .proyectos-xl{
+        display: none;
+    }
+
+    .grilla-proyectos{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0px;
+    }
+
+    .contactos{
+        margin-top: 0;
+        height: auto;
+    }
+
+    .grilla{
+        display: grid;
+        grid-template-columns: 60% auto;
+        gap: 20px;
+        margin-top: 5%;
+    }
+
+    .otro-contacto div i{
+        font-size: 20px;
+    }
+
+    .otro-contacto div span{
+        font-size: 20px;
+    }
 }
-                
+@media screen and (min-width:1000px) {
+    .contactos:last-child{
+        display: flex;
+    }
+    .otro-contacto{
+        display: block;
+    }
+}        
         /*---------------------------------------------------*/
         /* PANTALLAS MAYORES A 1500px (MONITORES Y SMART TV) */
         /*---------------------------------------------------*/
