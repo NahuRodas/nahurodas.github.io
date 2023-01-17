@@ -1,54 +1,17 @@
- 
- // Cambio del estilo de los logos de gris a color
 
- var imagenes = [ html = document.getElementById('HTML'),  
- csss = document.getElementById('CSS'),
- javaScript = document.getElementById('javaScript'), 
- jQuery = document.getElementById('jQuery'), 
- jason = document.getElementById('json'),   
- ajax = document.getElementById('ajax'), 
- bootsrap = document.getElementById('Bootstrap'), 
- java = document.getElementById('Java'),  
- cs = document.getElementById('C#'), 
- cp = document.getElementById('C++'),    
- php = document.getElementById('php'),   
- python = document.getElementById('Python'), 
- mysql = document.getElementById('MySQL'),   
- vsCode = document.getElementById('VSCode'),  
- eclipse = document.getElementById('Eclipse'),  
- wordPress = document.getElementById('WordPress'),  
- afterEffects = document.getElementById('AfterEffects'),  
- photoshop = document.getElementById('Photoshop') ];
- var elemento;
- var padre;
-
-imagenes.forEach(e => {
-    
- e.addEventListener('mouseover',function(){
-    e.style.filter = "grayscale(0%)";
-    elemento = document.createElement('h1');
-    elemento.className = "logo";
-    elemento.innerHTML = e.id;
-    padre.append(elemento);
-
-     
- })
-
- e.addEventListener('mouseout',function(){
-    e.style.filter = "grayscale(100%)";
-    padre.removeChild(padre.lastChild);    })
-});
-
-// ----------------------------------------------------------------------
 
 // Botones de la barra de navegacion
 
 var sobreMi = document.getElementById('btn-sobre-mi'),
+    cv = document.getElementById('btn-cv'),
     btnProyectos = document.getElementById('btn-proyectos'),
-    contactame = document.getElementById('btn-contactame'),
-    mi = document.getElementById('mi'),
+    contactame = document.getElementById('btn-contacto'),
+    irContactos = document.getElementById("ir-contactos"),
+    mi = document.getElementById('sobre-mi-xl'),
+    cv = document.getElementById('curriculum'),
     proyectos = document.getElementById('proyectos'),
-    contacto = document.getElementById('contacto');
+    contacto = document.getElementById('contactos');
+    
  
 sobreMi.addEventListener('click', e =>{
     window.scrollTo({
@@ -70,3 +33,19 @@ contactame.addEventListener('click', e =>{
         left: contacto.offsetLeft
     })
 })
+
+
+
+if (window.offsetTop === contacto.offsetTop) {
+    irContactos.style.display = "none";
+    } else {
+    irContactos.style.display = "block";
+    }
+
+
+irContactos.addEventListener('click', e =>{
+    window.scrollTo({
+        top: contacto.offsetTop,
+        left: contacto.offsetLeft
+    })
+});
