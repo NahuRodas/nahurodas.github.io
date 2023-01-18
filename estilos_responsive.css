@@ -31,7 +31,7 @@
     padding: 5px;
 }
 
-#ir-contactos {
+.ir-contactos {
     display: block;
     width: 60px;
     height: 60px;
@@ -306,6 +306,7 @@
         justify-content: center;
         height: auto;
         margin-bottom: 0;
+        background-color: #0A2647;
     }
 
     .proyectos-xl{
@@ -316,6 +317,10 @@
         display: grid;
         grid-template-columns: auto auto;
         gap: 0px;
+    }
+
+    .card{
+        width: 90%;
     }
 
     .contactos{
@@ -347,13 +352,18 @@
     }
 }        
         /*---------------------------------------------------*/
-        /* PANTALLAS MAYORES A 1500px (MONITORES Y SMART TV) */
+        /* PANTALLAS MAYORES A 1300px (MONITORES Y SMART TV) */
         /*---------------------------------------------------*/
 
 @media screen and (min-width:1300px) {
 
     .subtitulo{
         font-size: 40px;
+    }
+
+    .ir-contactos{
+        display: none;
+        visibility: hidden;
     }
 
     .barra-navegacion{
@@ -409,6 +419,13 @@
         background-color: #0A2647;
     }
 
+    .fondo-sobre-mi{
+        width: 100%;
+        height: 70vh;
+        background-color: #2C74B3;
+        
+    }
+
     .sobre-mi-xl .contenedor{
         display: grid;
         justify-content: center;
@@ -424,6 +441,7 @@
         background-color: rgba(0, 0, 0, 0.589);
         border: 1px solid white;
         border-radius: 15px;
+        box-shadow: 30px -20px #144272;
     }
 
     .sobre-mi-texto p{
@@ -436,13 +454,13 @@
 
     .sobre-mi-imagen img{
         width: 400px;
+        box-shadow: 30px -20px #144272;
     }
 
             /* Curriculum vitae */
 
     .curriculum{
         display: block;
-        height: 100vh;
         padding: 10%;
     }
 
@@ -467,9 +485,7 @@
         height: fit-content;
         margin: 0;
         padding: 5%;
-        background-image: url('/recursos/bg1.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: #0A2647;
         color: white;
     }
 

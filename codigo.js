@@ -2,21 +2,28 @@
 
 // Botones de la barra de navegacion
 
-var sobreMi = document.getElementById('btn-sobre-mi'),
-    cv = document.getElementById('btn-cv'),
+var btnSobreMi = document.getElementById('btn-sobre-mi'),
+    btnCv = document.getElementById('btn-cv'),
     btnProyectos = document.getElementById('btn-proyectos'),
-    contactame = document.getElementById('btn-contacto'),
+    btnContacto = document.getElementById('btn-contacto'),
     irContactos = document.getElementById("ir-contactos"),
     mi = document.getElementById('sobre-mi-xl'),
-    cv = document.getElementById('curriculum'),
-    proyectos = document.getElementById('proyectos'),
+    ccurriculum = document.getElementById('curriculum'),
+    proyectos = document.getElementById('proyectos-xl'),
     contacto = document.getElementById('contactos');
     
  
-sobreMi.addEventListener('click', e =>{
+btnSobreMi.addEventListener('click', e =>{
     window.scrollTo({
         top: 0,
         left: 0
+    });
+})
+
+btnCv.addEventListener('click', e =>{
+    window.scrollTo({
+        top: ccurriculum.offsetTop,
+        left: ccurriculum.offsetLeft
     });
 })
 
@@ -27,7 +34,7 @@ btnProyectos.addEventListener('click', e =>{
     });
 })
 
-contactame.addEventListener('click', e =>{
+btnContacto.addEventListener('click', e =>{
     window.scrollTo({
         top: contacto.offsetTop,
         left: contacto.offsetLeft
