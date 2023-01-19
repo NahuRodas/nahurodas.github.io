@@ -1,12 +1,11 @@
 
 
-// Botones de la barra de navegacion
+    // Botones de la barra de navegacion
 
 var btnSobreMi = document.getElementById('btn-sobre-mi'),
     btnCv = document.getElementById('btn-cv'),
     btnProyectos = document.getElementById('btn-proyectos'),
     btnContacto = document.getElementById('btn-contacto'),
-    irContactos = document.getElementById("ir-contactos"),
     mi = document.getElementById('sobre-mi-xl'),
     ccurriculum = document.getElementById('curriculum'),
     proyectos = document.getElementById('proyectos-xl'),
@@ -42,17 +41,35 @@ btnContacto.addEventListener('click', e =>{
 })
 
 
+    // Boton mensaje de pantallas pequeñas 
 
-if (window.offsetTop === contacto.offsetTop) {
-    irContactos.style.display = "none";
-    } else {
-    irContactos.style.display = "block";
-    }
-
-
+let irContactos = document.getElementById("ir-contactos");
 irContactos.addEventListener('click', e =>{
     window.scrollTo({
         top: contacto.offsetTop,
         left: contacto.offsetLeft
     })
 });
+
+
+    // Cambiar lenguaje de la pagina
+
+    let lenguageSelector = document.getElementById('check');
+
+    lenguageSelector.addEventListener('click', function(){
+        let isChecked = check.checked;
+
+        if (isChecked === true) {
+            location.href = "/index_esp.html";
+        }else{
+            location.href = "/index_eng.html";
+        }
+    });
+
+    // Cambiar a modo dark y light
+
+    let modoOscuro = document.getElementById('flexSwitchCheckReverse');
+
+    modoOscuro.addEventListener('click', function(){
+        document.documentElement.classList.toggle('dark-mode');
+    })

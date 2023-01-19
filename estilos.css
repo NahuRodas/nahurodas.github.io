@@ -15,6 +15,10 @@
 .separador{
     padding: 0;
     margin: 0;
+    color: black;
+}
+
+html.dark-mode .separador{
     color: white;
 }
 
@@ -27,8 +31,12 @@
 .subtitulo{
     text-align: center;
     margin-top: 10px;
-    background-color: #2C74B3;
+    background-color: #EFFFFD;
     padding: 5px;
+}
+
+html.dark-mode .subtitulo{
+    background-color: #2C74B3;
 }
 
 .ir-contactos {
@@ -78,6 +86,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #B8FFF9;
+    color: black;
+}
+
+html.dark-mode .sobre-mi-sm{
     background-color: #0A2647;
     color: white;
 }
@@ -93,17 +106,28 @@
 
 .sobre-mi-texto h2{
     text-align: center;
-    color: rgb(220, 220, 220);
+    color: rgb(82, 82, 82);
+}
+
+html.dark-mode .sobre-mi-texto h2{
+    color: rgb(226, 226, 226);
 }
 
 .sobre-mi-texto h1{
     text-align: center;
     font-style: italic;
     font-size: 2.5em;
+    background-color: #EFFFFD;
+    color: black;
+    animation: bg-animacion-light 2s linear infinite;
+}
+
+html.dark-mode .sobre-mi-texto h1{
     background-color: #144272;
     color: white;
     animation: bg-animacion 2s linear infinite;
 }
+
 @keyframes bg-animacion{
     0%{
        background-color: #144272;
@@ -116,16 +140,32 @@
      }
 }
 
+@keyframes bg-animacion-light{
+    0%{
+       background-color: #B8FFF9;
+    }
+    50%{
+        background-color: #85F4FF;
+     }
+    100%{
+        background-color: #B8FFF9
+     }
+}
+
 
 
 .sobre-mi-texto p{
     text-align: justify;
-    color: rgb(220, 220, 220);
+    color: black;
     font-size: 1em;
 }
 
+html.dark-mode .sobre-mi-texto p{
+    color: white;
+}
+
 .sobre-mi-texto strong{
-    color: #92c6ff;
+    color: #3cb3eb;
 }
 
 .sobre-mi-imagen{
@@ -139,7 +179,11 @@
 .sobre-mi-imagen img{
     width: 200px;
     border-radius: 50%;
-    border: 4px solid #2C74B3;
+    border: 4px solid black;
+}
+
+html.dark-mode .sobre-mi-imagen img{
+    border-color: white;
 }
 
         /* Curriculum Vitae en forma desplegable */
@@ -150,6 +194,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #85F4FF;
+    color: black;
+}
+
+html.dark-mode .curriculum{
     background-color: #144272;
     color: white;
 }
@@ -157,16 +206,32 @@
 .accordion{
     text-align: left;
     margin-top: 10%;
+    border:1px solid black;
+    border-bottom:none ;
+    border-radius: 5px;
+}
+
+.accordion-button{
+    border-bottom:1px solid black;
 }
 
 .accordion-button h3{
  font-size: 1.2em;
- color: white;
+ color: black;
+}
+
+html.dark-mode .accordion-button h3{
+    color: white;
 }
 
 .accordion-body{
     padding-left: 0px;
-    color: rgb(220, 220, 220);
+    color: black;
+    border-bottom:1px solid black;
+}
+
+html.dark-mode .accordion-body{
+    color: white;
 }
 
         /* Slider de proyectos */
@@ -177,6 +242,11 @@
     align-items: center;
     justify-content: center;
     margin: 0;
+    background-color: #B8FFF9;
+    color: black;
+}
+
+html.dark-mode .proyectos-sm{
     background-color: #0A2647;
     color: white;
 }
@@ -204,6 +274,12 @@
 .card{
     margin: 0 auto;
     width: 100%;
+    background-color: #B8FFF9;
+    color: black;
+    border: 1px solid #42C2FF;
+}
+
+html.dark-mode .card{
     background-color: #0A2647;
     color: white;
     border: 1px solid #92c6ff;
@@ -228,6 +304,11 @@
     display: block;
     align-items: center;
     justify-content: center;
+    background-color: #85F4FF;
+    color: black;
+}
+
+html.dark-mode .contactos{
     background-color: #144272;
     color: white;
 }
@@ -265,7 +346,15 @@
     text-decoration: none;
 }
 .otro-contacto div a span{
-    color: #92c6ff;
+    color: #3cb3eb;
+}
+
+.bx{
+    color: black;
+}
+
+html.dark-mode .bx{
+    color: white;
 }
 
 .contacto{
@@ -306,7 +395,13 @@
         justify-content: center;
         height: auto;
         margin-bottom: 0;
+        background-color: #B8FFF9;
+        color: black;
+    }
+
+    html.dark-mode .proyectos-md{
         background-color: #0A2647;
+        color: white;
     }
 
     .proyectos-xl{
@@ -361,9 +456,21 @@
         font-size: 40px;
     }
 
+    .separador{
+        display: none;
+    }
+
     .ir-contactos{
         display: none;
         visibility: hidden;
+    }
+
+    .vr{
+        color: black;
+    }
+
+    html.dark-mode .vr{
+        color: white;
     }
 
     .barra-navegacion{
@@ -375,15 +482,21 @@
         position: fixed;
         top: 0;
         left: 0;
-        background-color: black;
+        background-color: #f1faf9;
+        color: black;
         z-index: 3;
+    }
+
+    html.dark-mode .barra-navegacion{
+        background-color: #061629;
+        color: white;
     }
 
     .btn-nav-contenedor{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 80%;
+        width: 90%;
     }
 
     .btn-nav{
@@ -391,18 +504,85 @@
         padding: 5px;
         margin: 5px;
         font-size: 20px;
-        color: white;
+        color: black;
         background-color: rgba(240, 248, 255, 0);
         border-radius: 10px;
         border: none;
     }
 
-    .btn-nav:hover{
-        background-color: rgb(12, 12, 12);
+    html.dark-mode .btn-nav{
+        color: white;
     }
 
-    .btn-nav:active{
-        background-color: rgb(12, 12, 12);
+    .btn-nav:hover{
+        background-color: #d4e4e2;
+    }
+    
+    html.dark-mode .btn-nav:hover{
+        background-color: #0A2647;
+    }
+
+    html.dark-mode .btn-nav:active{
+        background-color: #0A2647;
+    }
+
+    .cambios{
+        display: flex;
+    }
+
+    .en{
+        color: black;
+        font-size: 15px;
+    }
+
+    html.dark-mode .en{
+        color: white;
+    }
+
+    .es{
+        color: black;
+        font-size: 15px;
+    }
+
+    html.dark-mode .es{
+        color: white;
+    }
+
+    .check{
+        position: relative;
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .check::before{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 15px;
+        background-color: #2C74B3;
+        border-radius: 25px;
+    }
+
+    .check::after{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        border-radius: 15px;
+        transition: 0.25s;
+        border: 2px solid #2C74B3;
+        box-sizing: border-box;
+    }
+
+    .check:checked::before{
+        background-color: #2C74B3;
+    }
+
+    .check:checked::after{
+        left: 15px;
+        border: 2px solid #2C74B3;
     }
 
             /* Header sobre mi */
@@ -416,14 +596,12 @@
         justify-content: space-between;
         align-items: center;
         height: 100vh;
-        background-color: #0A2647;
+        background-image: url('/recursos/bg2light.png');
+        background-size: cover;
     }
 
-    .fondo-sobre-mi{
-        width: 100%;
-        height: 70vh;
-        background-color: #2C74B3;
-        
+    html.dark-mode .sobre-mi-xl{
+        background-image: url('/recursos/bg2.png');
     }
 
     .sobre-mi-xl .contenedor{
@@ -438,14 +616,23 @@
         width: 70%;
         margin: 10px;
         padding: 20px;
+        background-color: rgba(255, 255, 255, 0.658);
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+
+    html.dark-mode .sobre-mi-texto{
         background-color: rgba(0, 0, 0, 0.589);
         border: 1px solid white;
-        border-radius: 15px;
-        box-shadow: 30px -20px #144272;
+        color: white;
     }
 
     .sobre-mi-texto p{
         text-align: justify;
+    }
+
+    html.dark-mode .sobre-mi-texto p{
+        color: white;
     }
 
     .sobre-mi-texto h1{
@@ -454,7 +641,11 @@
 
     .sobre-mi-imagen img{
         width: 400px;
-        box-shadow: 30px -20px #144272;
+        border: 4px solid black;
+    }
+
+    html.dark-mode .sobre-mi-imagen img{
+        border: 4px solid white;
     }
 
             /* Curriculum vitae */
@@ -485,6 +676,11 @@
         height: fit-content;
         margin: 0;
         padding: 5%;
+        background-color: #B8FFF9;
+        color: black;
+    }
+
+    html.dark-mode .proyectos-xl{
         background-color: #0A2647;
         color: white;
     }
