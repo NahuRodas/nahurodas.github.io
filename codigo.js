@@ -60,7 +60,7 @@ irContactos.addEventListener('click', e =>{
         let isChecked = check.checked;
 
         if (isChecked === true) {
-            location.href = "/index_esp.html";
+            location.href = "/index.html";
         }else{
             location.href = "/index_eng.html";
         }
