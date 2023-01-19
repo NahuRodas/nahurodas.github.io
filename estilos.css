@@ -39,6 +39,24 @@ html.dark-mode .subtitulo{
     background-color: #2C74B3;
 }
 
+.modo-oscuro-sm{
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    width: 70px;
+    background-color: #85F4FF;
+    padding: 5px;
+    border: 1px solid #42C2FF;
+    border-radius: 15px;
+    z-index: 999;
+}
+
+html.dark-mode .modo-oscuro-sm{
+    background-color: #2C74B3;
+    color: white;
+    border: 1px solid #0A2647;
+}
+
 .ir-contactos {
     display: block;
     width: 60px;
@@ -452,11 +470,19 @@ html.dark-mode .bx{
 
 @media screen and (min-width:1300px) {
 
+    #modo-oscuro-sm{
+        display: none;
+    }
+
     .subtitulo{
         font-size: 40px;
     }
 
     .separador{
+        display: none;
+    }
+
+    .modo-oscuro-sm{
         display: none;
     }
 

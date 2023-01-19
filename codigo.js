@@ -66,10 +66,22 @@ irContactos.addEventListener('click', e =>{
         }
     });
 
+
+
     // Cambiar a modo dark y light
+    //
+    // Pantallas grandes
 
-    let modoOscuro = document.getElementById('flexSwitchCheckReverse');
+    let modoOscuroXL = document.getElementById('modo-oscuro-xl');
 
-    modoOscuro.addEventListener('click', function(){
+    modoOscuroXL.addEventListener('click', function(){
+        document.documentElement.classList.toggle('dark-mode');
+    })
+
+    // Pantallas chicas
+
+    let modoOscuroSm = document.getElementById('modo-oscuro-sm');
+
+    modoOscuroSm.addEventListener('click', function(){
         document.documentElement.classList.toggle('dark-mode');
     })
