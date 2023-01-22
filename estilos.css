@@ -31,14 +31,14 @@ html.dark-mode .separador{
 .subtitulo{
     text-align: center;
     margin-top: 10px;
-    background-color: #EFFFFD;
+    background-color: #98f0f8;
     padding: 5px;
 }
 
 html.dark-mode .subtitulo{
     background-color: #2C74B3;
 }
-
+/*#EFFFFD*/
 .modo-oscuro-sm{
     position: fixed;
     top: 15px;
@@ -87,7 +87,7 @@ html.dark-mode .modo-oscuro-sm{
   }
 
   #ir-contactos:hover {
-    background-color: #2C74B3; /* Add a dark-grey background on hover */
+    background-color: #2C74B3; 
   }
 
         /* Barra de navegación */
@@ -104,7 +104,7 @@ html.dark-mode .modo-oscuro-sm{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #B8FFF9;
+    background-color: #EFFFFD;
     color: black;
 }
 
@@ -135,7 +135,7 @@ html.dark-mode .sobre-mi-texto h2{
     text-align: center;
     font-style: italic;
     font-size: 2.5em;
-    background-color: #EFFFFD;
+    background-color: #2C74B3;
     color: black;
     animation: bg-animacion-light 2s linear infinite;
 }
@@ -160,13 +160,13 @@ html.dark-mode .sobre-mi-texto h1{
 
 @keyframes bg-animacion-light{
     0%{
-       background-color: #B8FFF9;
+       background-color: #3cb3eb;
     }
     50%{
         background-color: #85F4FF;
      }
     100%{
-        background-color: #B8FFF9
+        background-color: #3cb3eb;
      }
 }
 
@@ -212,7 +212,7 @@ html.dark-mode .sobre-mi-imagen img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #85F4FF;
+    background-color: #d8fffa;
     color: black;
 }
 
@@ -260,7 +260,7 @@ html.dark-mode .accordion-body{
     align-items: center;
     justify-content: center;
     margin: 0;
-    background-color: #B8FFF9;
+    background-color: #EFFFFD;
     color: black;
 }
 
@@ -271,7 +271,6 @@ html.dark-mode .proyectos-sm{
 
 .proyectos-md{
     display: none;
-    color: white;
 }
 
 .proyectos-xl{
@@ -292,9 +291,9 @@ html.dark-mode .proyectos-sm{
 .card{
     margin: 0 auto;
     width: 100%;
-    background-color: #B8FFF9;
+    background-color: #EFFFFD;
     color: black;
-    border: 1px solid #42C2FF;
+    border: 3px solid black;
 }
 
 html.dark-mode .card{
@@ -322,7 +321,7 @@ html.dark-mode .card{
     display: block;
     align-items: center;
     justify-content: center;
-    background-color: #85F4FF;
+    background-color: #d8fffa;
     color: black;
 }
 
@@ -413,7 +412,7 @@ html.dark-mode .bx{
         justify-content: center;
         height: auto;
         margin-bottom: 0;
-        background-color: #B8FFF9;
+        background-color: #EFFFFD;
         color: black;
     }
 
@@ -446,6 +445,10 @@ html.dark-mode .bx{
         grid-template-columns: auto auto;
         gap: 20px;
         margin-top: 5%;
+    }
+
+    .otro-contacto{
+        padding-left: 20%;
     }
 
     .otro-contacto div i{
@@ -702,7 +705,7 @@ html.dark-mode .bx{
         height: fit-content;
         margin: 0;
         padding: 5%;
-        background-color: #B8FFF9;
+        background-color: #EFFFFD;
         color: black;
     }
 
@@ -721,5 +724,28 @@ html.dark-mode .bx{
     .card{
         width: 500px;
         height: fit-content;
+    }
+
+    .form-control{
+        border: 1px solid black;
+    }
+
+    html.dark-mode .form-control{
+        border: none;
+    }
+
+    .contactos .contenedor:nth-child(2){
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+    }
+    
+    .otro-contacto{
+        padding-top: 50px;
+    }
+
+    .otro-contacto .grilla{
+        gap:50px;
+        padding-left: 20%;
     }
 }
