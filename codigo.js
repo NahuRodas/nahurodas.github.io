@@ -95,15 +95,23 @@ irContactos.addEventListener('click', e =>{
         mensaje = document.getElementById('mensaje'),
         subject = "";
 
+        function mensajeDeEnvio() {
+            if( location.href === "https://github.com/NahuRodas/nahurodas.github.io/blob/main/index.html" ) {
+                alert("Mensaje enviado. Me comunicaré lo mas rápido posible. <3")
+            }else{
+                alert("Message sent. I will communicate as quickly as possible. <3")
+            }
+        }
+
     btnEnviar.addEventListener('click', e=> {
         e.preventDefault();
         Email.send({
             SecureToken : "2d1f208f-5a22-4a3b-befb-8cacd7388b28",
             To : 'cesarnrodas@gmail.com',
             From : 'cesarnrodas@gmail.com',
-            Subject : nombre.value + " mensaje desde página web.",
+            Subject :"Mensaje de " + nombre.value + " desde página web.",
             Body : "Email: " + email.value + " | Mensaje: " + mensaje.value
         }).then(
-          message => alert(message)
+            mensajeDeEnvio()
         );
     })
