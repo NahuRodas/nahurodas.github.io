@@ -96,7 +96,7 @@ irContactos.addEventListener('click', e =>{
         subject = "";
 
         function mensajeDeEnvio() {
-            if( location.href === "https://github.com/NahuRodas/nahurodas.github.io/blob/main/index.html" ) {
+            if( location.href === "https://nahurodas.github.io/" ) {
                 alert("Mensaje enviado. Me comunicaré lo mas rápido posible. <3")
             }else{
                 alert("Message sent. I will communicate as quickly as possible. <3")
