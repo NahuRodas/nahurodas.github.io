@@ -85,3 +85,25 @@ irContactos.addEventListener('click', e =>{
     modoOscuroSm.addEventListener('click', function(){
         document.documentElement.classList.toggle('dark-mode');
     })
+
+
+        // Enviar mensaje desde la pagina a mi email
+
+    let btnEnviar = document.getElementById('btn-enviar'),
+        nombre = document.getElementById('nombre'),
+        email = document.getElementById('email'),
+        mensaje = document.getElementById('mensaje'),
+        subject = "";
+
+    btnEnviar.addEventListener('click', e=> {
+        e.preventDefault();
+        Email.send({
+            SecureToken : "2d1f208f-5a22-4a3b-befb-8cacd7388b28",
+            To : 'cesarnrodas@gmail.com',
+            From : 'cesarnrodas@gmail.com',
+            Subject : nombre.value + " mensaje desde página web.",
+            Body : "Email: " + email.value + " | Mensaje: " + mensaje.value
+        }).then(
+          message => alert(message)
+        );
+    })
