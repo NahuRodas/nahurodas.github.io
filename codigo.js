@@ -87,7 +87,7 @@ irContactos.addEventListener('click', e =>{
     })
 
 
-        // Enviar mensaje desde la pagina a mi email
+        // Enviar mensaje desde la página a mi email
 
     let btnEnviar = document.getElementById('btn-enviar'),
         nombre = document.getElementById('nombre'),
