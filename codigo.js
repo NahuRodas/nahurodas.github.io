@@ -1,60 +1,76 @@
 
 
+    //------------------------------------
     // Botones de la barra de navegacion
+    //------------------------------------
 
-var btnSobreMi = document.getElementById('btn-sobre-mi'),
-    btnCv = document.getElementById('btn-cv'),
-    btnProyectos = document.getElementById('btn-proyectos'),
-    btnContacto = document.getElementById('btn-contacto'),
-    mi = document.getElementById('sobre-mi-xl'),
-    ccurriculum = document.getElementById('curriculum'),
-    proyectos = document.getElementById('proyectos-xl'),
-    contacto = document.getElementById('contactos');
+    // Declaracion de variables
+
+    var btnSobreMi = document.getElementById('btn-sobre-mi'),
+        btnCv = document.getElementById('btn-cv'),
+        btnProyectos = document.getElementById('btn-proyectos'),
+        btnContacto = document.getElementById('btn-contacto'),
+        mi = document.getElementById('sobre-mi-xl'),
+        ccurriculum = document.getElementById('curriculum'),
+        proyectos = document.getElementById('proyectos-xl'),
+        contacto = document.getElementById('contactos');
     
- 
-btnSobreMi.addEventListener('click', e =>{
-    window.scrollTo({
-        top: 0,
-        left: 0
-    });
-})
+    //Eventos para cada botón al hacer click
 
-btnCv.addEventListener('click', e =>{
-    window.scrollTo({
-        top: ccurriculum.offsetTop,
-        left: ccurriculum.offsetLeft
-    });
-})
-
-btnProyectos.addEventListener('click', e =>{
-    window.scrollTo({
-        top: proyectos.offsetTop,
-        left: proyectos.offsetLeft
-    });
-})
-
-btnContacto.addEventListener('click', e =>{
-    window.scrollTo({
-        top: contacto.offsetTop,
-        left: contacto.offsetLeft
+    btnSobreMi.addEventListener('click', e =>{
+        window.scrollTo({
+            top: 0,
+            left: 0
+        });
     })
-})
 
+    btnCv.addEventListener('click', e =>{
+        window.scrollTo({
+            top: ccurriculum.offsetTop,
+            left: ccurriculum.offsetLeft
+        });
+    })
+
+    btnProyectos.addEventListener('click', e =>{
+        window.scrollTo({
+            top: proyectos.offsetTop,
+            left: proyectos.offsetLeft
+        });
+    })
+
+    btnContacto.addEventListener('click', e =>{
+        window.scrollTo({
+            top: contacto.offsetTop,
+            left: contacto.offsetLeft
+        })
+    })
 
     // Boton mensaje de pantallas pequeñas 
 
-let irContactos = document.getElementById("ir-contactos");
-irContactos.addEventListener('click', e =>{
-    window.scrollTo({
-        top: contacto.offsetTop,
-        left: contacto.offsetLeft
-    })
-});
+    let irContactos = document.getElementById("ir-contactos");
+    irContactos.addEventListener('click', e =>{
+        window.scrollTo({
+            top: contacto.offsetTop,
+            left: contacto.offsetLeft
+        })
+    });
 
 
+
+
+
+
+
+
+    //--------------------------------
     // Cambiar lenguaje de la pagina
+    //--------------------------------
+
+    // Declaracion de variables
 
     let lenguageSelector = document.getElementById('check');
+
+    // Evento del "toggle" para cambiar entre ingles y español
 
     lenguageSelector.addEventListener('click', function(){
         let isChecked = check.checked;
@@ -68,26 +84,49 @@ irContactos.addEventListener('click', e =>{
 
 
 
-    // Cambiar a modo dark y light
-    //
-    // Pantallas grandes
+
+
+
+
+
+    //-----------------------------
+    // Cambiar a modo oscuro y claro
+    //-----------------------------
+    
+    // ----Pantallas grandes----
+    // Declaracion de variables
 
     let modoOscuroXL = document.getElementById('modo-oscuro-xl');
+
+    // Evento del "toggle" para cambiar entre modo oscuro y modo claro
 
     modoOscuroXL.addEventListener('click', function(){
         document.documentElement.classList.toggle('dark-mode');
     })
 
-    // Pantallas chicas
+    // ----Pantallas chicas----
+    // Declaracion de variables
 
     let modoOscuroSm = document.getElementById('modo-oscuro-sm');
+
+    // Evento del "toggle" para cambiar entre modo oscuro y modo claro
 
     modoOscuroSm.addEventListener('click', function(){
         document.documentElement.classList.toggle('dark-mode');
     })
 
 
-        // Enviar mensaje desde la página a mi email
+
+
+
+
+
+    
+    //----------------------------------------------------------------
+    // Enviar mensaje desde el formulario de la página hacia mi email
+    //----------------------------------------------------------------
+
+    // Declaracion de variables
 
     let btnEnviar = document.getElementById('btn-enviar'),
         nombre = document.getElementById('nombre'),
@@ -95,13 +134,17 @@ irContactos.addEventListener('click', e =>{
         mensaje = document.getElementById('mensaje'),
         subject = "";
 
-        function mensajeDeEnvio() {
-            if( location.href === "https://nahurodas.github.io/" ) {
-                alert("Mensaje enviado. Me comunicaré lo mas rápido posible. <3")
-            }else{
-                alert("Message sent. I will communicate as quickly as possible. <3")
-            }
+    // Funcion para la creacion del mensaje de confirmacion de envio
+
+    function mensajeDeEnvio() {
+        if( location.href === "https://nahurodas.github.io/" ) {
+            alert("Mensaje enviado. Me comunicaré lo mas rápido posible. <3")
+        }else{
+            alert("Message sent. I will communicate as quickly as possible. <3")
         }
+    }
+
+    // Evento para el boton de envio del formulario
 
     btnEnviar.addEventListener('click', e=> {
         e.preventDefault();
