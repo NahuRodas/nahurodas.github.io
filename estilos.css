@@ -138,6 +138,7 @@ html.dark-mode .sobre-mi-texto h2{
     background-color: #2C74B3;
     color: black;
     animation: bg-animacion-light 2s linear infinite;
+    letter-spacing: 5px;
 }
 
 html.dark-mode .sobre-mi-texto h1{
